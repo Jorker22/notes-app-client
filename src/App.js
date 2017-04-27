@@ -8,13 +8,14 @@ import {
 import { LinkContainer } from 'react-router-bootstrap';
 import './App.css';
 
+
 export default class App extends Component {
   render() {
     return (
       <div className="App container">
         <Navbar fluid collapseOnSelect>
           <Navbar.Header>
-            <Navbar.Brand>
+            <Navbar.Brand class="test">
               <IndexLink to="/">Education App</IndexLink>
             </Navbar.Brand>
             <Navbar.Toggle />
@@ -35,6 +36,8 @@ export default class App extends Component {
         </Navbar>
           { this.props.children }
       </div>
+
+
     );
   }
 }

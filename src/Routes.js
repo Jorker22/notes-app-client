@@ -9,6 +9,7 @@ import Jigsaw from './containers/Jigsaw'
 import RobotControll from './containers/RobotControll'
 import NewNote from './containers/CustomQuiz';
 
+
 export default (props) => (
   <Router {...props}>
   <Route path="/" component={App}>
@@ -17,6 +18,7 @@ export default (props) => (
   <Route path="QuizGame" component={QuizGame}/>
   <Route path="Jigsaw" component={Jigsaw}/>
   <Route path="RobotControll" component={RobotControll}/>
+
 
 
   { /* Finally, catch all unmatched routes */ }

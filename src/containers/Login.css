@@ -8,3 +8,17 @@
     max-width: 320px;
   }
 }
+
+.Login a.quizzs.btn.btn-lg.btn-default.btn-block{
+  background-color: #3d342e;
+  border-color:Black ;
+  color:white;
+  margin-bottom: 5%;
+}
+
+.Login a.robots.btn.btn-lg.btn-default.btn-block{
+  background-color:#3d342e;
+  border-color:Black;
+  margin-bottom: 5%;
+  color:white;
+}

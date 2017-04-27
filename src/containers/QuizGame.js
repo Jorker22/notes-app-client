@@ -9,31 +9,33 @@ import {
 } from 'react-bootstrap';
 import './Login.css';
 import { LinkContainer } from 'react-router-bootstrap';
+import './QuizGame.css';
 
 
-
-export default class NotFound extends Component {
+export default class Quiz extends Component {
 
   handleClick(){
     // do something meaningful, Promises, if/else, whatever, and then
-    window.location.assign('./Question2.htm');
+    window.location.assign('./New SWF.htm');
   }
+
+  handleClick2(){
+    // do something meaningful, Promises, if/else, whatever, and then
+    window.location.assign('http://localhost:8080/#/');
+  }
+
 
   render() {
     return (
       <div class="Login">
   <form onSubmit={this.handleSubmit}>
-      <LinkContainer to="/RobotControll">
-          <Button
-          block
-          bsSize="large"
+   
+  <Button id="yo" color="danger" block bsSize="large" onClick={this.handleClick2}>Quiz Custome</Button>
 
-          type="submit">
-          Quiz Customer
-          </Button>
-      </LinkContainer>
-
-   <Button color="danger" onClick={this.handleClick}> question 1  </Button>
+  
+ 
+   <Button color="danger" block bsSize="large" onClick={this.handleClick}> Question</Button>
+  
    </form>
    { this.props.children }
 </div>

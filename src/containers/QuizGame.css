@@ -18,3 +18,32 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+button#yo.btn.btn-default{
+ 
+   background-color:#3d342e;
+   color:white;
+   border-color:black;
+   margin-top: 30%;
+}
+
+button.btn.btn-default{
+   
+  background-color:  #e34540;
+  color:white;
+  border-color:black;
+  margin-top:7%;
+
+}
+
+@media all and (min-width: 480px) {
+  .Login {
+    padding: 60px 0;
+  }
+
+form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+}
+

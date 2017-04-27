@@ -34,42 +34,32 @@ export default class Login extends Component {
     event.preventDefault();
   }
 
+   handleClick2(){
+    // do something meaningful, Promises, if/else, whatever, and then
+    window.location.assign('./wix.html');
+  }
+
+
   render() {
     return (
       <div className="Login">
         <form onSubmit={this.handleSubmit}>
           <LinkContainer to="/QuizGame">
-          <Button
+          <Button className="quizzs"
             block
             bsSize="large"
 
             type="submit">
-            Quizz Game
+            Learning Mission
           </Button>
           </LinkContainer>
 
-        <LinkContainer to="/Jigsaw">
-          <Button
-            block
-            bsSize="large"
-
-            type="submit">
-            Jigsaw Game
-            </Button>
-        </LinkContainer>
-
-        <LinkContainer to="/RobotControll">
-            <Button
-            block
-            bsSize="large"
-
-            type="submit">
-            Robot Control
-            </Button>
-        </LinkContainer>
+     
+   <Button color="danger" block bsSize="large" onClick={this.handleClick2}> Robot </Button>
         </form>
           { this.props.children }
       </div>
+
     );
   }
 }
